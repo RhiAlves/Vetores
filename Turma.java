@@ -1,11 +1,11 @@
 public class Turma {
-    private Aluno[] alunos = new Aluno[5]; // vetor de tamanho 5
-    private int quantidade = 0; // contador de alunos cadastrados
+    private Aluno[] alunos = new Aluno[5]; 
+    private int quantidade = 0; 
 
     public void adicionarAluno(Aluno aluno) {
-        if (quantidade < alunos.length) { // há espaço?
-            alunos[quantidade] = aluno; // adiciona no próximo indice livre
-            quantidade++; // incrementa o contador
+        if (quantidade < alunos.length) { 
+            alunos[quantidade] = aluno; 
+            quantidade++; 
             System.out.println("Aluno " + aluno.getNome() + " adicionado com sucesso!");
         } else {
             System.out.println("Turma cheia! Não é possível adicionar mais alunos.");
@@ -14,22 +14,23 @@ public class Turma {
 
     public void listarAlunos() {
         System.out.println("\n=== Lista de Alunos ===");
-        if (quantidade == 0) { // verifica se não há alunos na turma
+        if (quantidade == 0) { 
             System.out.println("Nenhum aluno cadastrado.");
-            return; // não executa o loop
+            return; 
         }
         
-        for (int i = 0; i < quantidade; i++) { // pecorre indices ocupados
-            alunos[i].exibirInfo(); // chama o metod de exibição para cada aluno
+        for (int i = 0; i < quantidade; i++) { 
+            alunos[i].exibirInfo(); 
         }
     }
 
-    public Aluno buscarPorMatricula(int matricula) { // recebe a matricula procurada como parametro
-        for (int i = 0; i < quantidade; i++) { //pecorre os alunos cadatrados
-            if (alunos[i].getMatricula() == matricula) { // compara as matriculas
-                return alunos[i]; // retorna o aluno encontrado
+    public Aluno buscarPorMatricula(int matricula) { 
+        for (int i = 0; i < quantidade; i++) { 
+            if (alunos[i].getMatricula() == matricula) { 
+                return alunos[i]; 
             }
         }
         return null;
     }
+
 }
