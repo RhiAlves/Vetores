@@ -57,12 +57,11 @@ public class Aluno {
     }
 
     public String toString() {
-        return "Nome: " + nome + " | Matrícula: " + matricula + 
-               " | Nota 1: " + nota1 + " | Nota 2: " + nota2 + 
-               " | Média: " + calcularMedia() + " | Situação: " + situacao();
+        return "Nome: " + nome + " \nMatrícula: " + matricula + " \nNota 1: " + nota1 + " \nNota 2: " + nota2 + " \nMédia: " + calcularMedia() + " \nSituação: " + situacao();
     }
 
     public void exibirInfo() {
         System.out.println(toString());
     }
+
 }
