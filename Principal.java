@@ -12,22 +12,23 @@ public class Principal {
         
 
         
-        turma.listarAlunos();// chama o metodo listar alunos da classe turma
+        turma.listarAlunos();
 
     
         System.out.println("\n--- Buscar Aluno ---");
         System.out.print("Digite a matrícula: ");
-        int matriculaBusca = scanner.nextInt();
+        int matriculaProcurada = scanner.nextInt();
         
-        Aluno alunoEncontrado = turma.buscarPorMatricula(matriculaBusca);
+        Aluno alunoEncontrado = turma.buscarPorMatricula(matriculaProcurada);
         
         if (alunoEncontrado != null) {
             System.out.println("\nAluno encontrado:");
             alunoEncontrado.exibirInfo();
         } else {
-            System.out.println("Aluno com matrícula " + matriculaBusca + " não encontrado.");
+            System.out.println("Aluno com matrícula " + matriculaProcurada + " não encontrado.");
         }
 
         scanner.close();
     }
 }
+
