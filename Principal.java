@@ -9,6 +9,7 @@ public class Principal {
         turma.adicionarAluno(new Aluno("Amora", 001, 10.0, 8.0));
         turma.adicionarAluno(new Aluno("Peppi", 002, 5.5, 4.9));
         turma.adicionarAluno(new Aluno("Pink", 003, 8.5, 9.5));
+        turma.adicionarAluno(new Aluno("Lua", 004, 9.7, 8.0));
         
 
         
@@ -31,4 +32,5 @@ public class Principal {
         scanner.close();
     }
 }
+
 
