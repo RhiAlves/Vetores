@@ -13,7 +13,7 @@ public class Turma {
     }
 
     public void listarAlunos() {
-        System.out.println("\n=== Lista de Alunos ===");
+        System.out.println("\n--- Lista de Alunos ---");
         if (quantidade == 0) { 
             System.out.println("Nenhum aluno cadastrado.");
             return; 
@@ -34,3 +34,4 @@ public class Turma {
     }
 
 }
+
